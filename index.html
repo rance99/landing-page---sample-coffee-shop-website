@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rance Coffee House</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style1.css" />
+  <style>
+    /*CSS RESET*/
+    body {
+      font-family: "Supermercado One", cursive;
+      font-size: larger;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("images/bg1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      width: auto;
+    }
+    .left {
+      display: inline-block;
+      /*border: 3px solid red;*/
+      position: absolute;
+      left: 40px;
+      top: 20px;
+    }
+    .left img {
+      width: 114px;
+    }
+    .left div {
+      text-align: center;
+      line-height: 14px;
+      font-size: 22px;
+    }
+    .left div:hover {
+      color: rgb(255, 1, 213);
+      cursor: pointer;
+    }
+    .middle {
+      display: block;
+      width: 40%;
+      margin: 20px auto;
+      /*border: 3px solid green;*/
+    }
+    .right {
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 50px;
+      /*border: 3px solid darkblue;*/
+    }
+    /*.right img {
+      width: 90px;
+    }*/
+    .navbar {
+      /*to bring our nav bar content in a single line*/
+      display: inline-block;
+    }
+    .navbar li {
+      /*to bring our nav bar content in a single line*/
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: white;
+      /*removes the underlined part from our anchor elements*/
+      text-decoration: none;
+      padding: 30px 10px;
+    }
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: rgb(255, 1, 213);
+    }
+    .btn {
+      font-family: "Supermercado One", cursive;
+      margin: 0px 10px;
+      color: white;
+      background: black;
+      padding: 7px 14px;
+      border: 2px solid rgb(255, 1, 213);
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(255, 1, 213);
+    }
+
+    .container {
+      font-family: cursive;
+      font-size: 12px;
+      /*border: 2px solid yellow;*/
+      margin: 200px 50px;
+      padding: 48px 24px;
+      width: 33%;
+      border-radius: 14px;
+    }
+    .container h1 {
+      font-family: "Supermercado One", cursive;
+      font-size: 24px;
+      text-align: center;
+      background-color: black;
+      color: rgb(255, 1, 213);
+      border: 2px solid rgb(255, 1, 213);
+      border-radius: 25px;
+      margin: 2px 40px;
+      padding: 10px;
+      position: absolute;
+      top: 255px;
+      left: 80px;
+    }
+    .container button {
+      display: block;
+      margin: 3px auto;
+      width: 250px;
+      font-size: 20px;
+      position: absolute;
+      top: 565px;
+      left: 170px;
+    }
+    .form-group input {
+      display: block;
+      text-align: center;
+      border: 2px solid rgb(255, 1, 213);
+      border-radius: 10px;
+      padding: 7px;
+      width: 250px;
+      margin: 10px auto;
+      font-size: 20px;
+      font-family: fantasy;
+      cursor: pointer;
+    }
+    .form-group input::placeholder {
+      color: black;
+    }
+    .form-group select {
+      display: block;
+      text-align: center;
+      border: 2px solid rgb(255, 1, 213);
+      border-radius: 10px;
+      padding: 5px;
+      width: 270px;
+      margin: 10px auto;
+      font-size: 20px;
+      font-family: fantasy;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!--left box for logo-->
+      <div class="left">
+        <!--this is left-->
+        <img src="images/logo3.png" alt="" />
+        <div>Rance Coffee</div>
+      </div>
+      <!--middle box for nav bar-->
+      <div class="middle">
+        <!--this is middle-->
+        <ul class="navbar">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">OUR PRODUCTS</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <!--right box for search/cart-->
+      <div class="right">
+        <!--<img src="images/cart3.png" alt="" />-->
+        <!--this is right-->
+        <button class="btn">Our Locations</button>
+        <button class="btn">Social Media</button>
+      </div>
+    </header>
+    <div class="container">
+      <form action="noaction.php">
+        <h1>Join us on our coffee adventure</h1>
+        <div class="form-group">
+          <input type="text" placeholder="Enter Your Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Enter Your E-mail" />
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="Enter Your Contact Details" />
+        </div>
+        <div class="form-group">
+          <select name="dropdown">
+            <option value="initial">Your City</option>
+            <option value="NDL">New Delhi</option>
+            <option value="MB">Mumbai</option>
+            <option value="BNG">Bengaluru</option>
+            <option value="PUN">Pune</option>
+            <option value="KLK">Kolkata</option>
+          </select>
+        </div>
+        <button class="btn">Submit Now</button>
+      </form>
+    </div>
+  </body>
+</html>
